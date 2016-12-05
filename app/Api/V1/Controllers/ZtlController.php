@@ -8,6 +8,8 @@ use App\Http\Requests;
 use JWTAuth;
 use App\Ztl;
 use Dingo\Api\Routing\Helpers;
+use Illuminate\Support\Facades\Storage;
+
 
 
 
@@ -31,11 +33,18 @@ class ZtlController extends Controller
 
     public function store(Request $request)
     {
+        $destinationPath="../";
         $currentUser = JWTAuth::parseToken()->authenticate();
         if ($request->hasFile('file')) {
             $ztl = new Ztl;
             $ztl->città = $request->get('città');
-            $ztl->file = $request->get('file'); //percorso file
+            $content=$request->file('file');
+            Storage::disk('ztls')->put($content);
+            dd();
+
+            if(Storage::disk('ztls')->exists('file.csv')){
+            }
+            $ztl->file = $exists; //percorso file
         }else return $this->response->error('ztl_file_missing', 500);
 
 

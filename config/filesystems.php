@@ -43,6 +43,8 @@ return [
 
     'disks' => [
 
+
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
@@ -60,6 +62,11 @@ return [
             'secret' => 'your-secret',
             'region' => 'your-region',
             'bucket' => 'your-bucket',
+        ],
+
+        'ztls' => [
+            'driver' => 'local',
+            'root'   => storage_path().'/ztls',
         ],
 
     ],
