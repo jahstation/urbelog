@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Api\V1\Requests;
+namespace Urbelog\Api\V1\Requests;
 
 use Config;
 use Dingo\Api\Http\FormRequest;

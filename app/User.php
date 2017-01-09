@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Urbelog;
 
 use Hash;
 use Illuminate\Notifications\Notifiable;

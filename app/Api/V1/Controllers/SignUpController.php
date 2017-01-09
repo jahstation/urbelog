@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Api\V1\Controllers;
+namespace Urbelog\Api\V1\Controllers;
 
 use Config;
-use App\User;
+use Urbelog\User;
 use Tymon\JWTAuth\JWTAuth;
-use App\Http\Controllers\Controller;
-use App\Api\V1\Requests\LoginRequest;
+use Urbelog\Http\Controllers\Controller;
+use Urbelog\Api\V1\Requests\LoginRequest;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class SignUpController extends Controller

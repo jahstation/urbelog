@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Api\V1\Controllers;
+namespace Urbelog\Api\V1\Controllers;
 
-use App\Http\Controllers\Controller;
+use Urbelog\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests;
+use Urbelog\Http\Requests;
 use JWTAuth;
-use App\Vehicle;
+use Urbelog\Vehicle;
 use Dingo\Api\Routing\Helpers;
 
 class VehicleController extends Controller

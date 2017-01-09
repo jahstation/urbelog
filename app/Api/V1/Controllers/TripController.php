@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Api\V1\Controllers;
+namespace Urbelog\Api\V1\Controllers;
 
-use App\Http\Controllers\Controller;
+use Urbelog\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests;
+use Urbelog\Http\Requests;
 use JWTAuth;
-use App\Trip;
+use Urbelog\Trip;
 use Dingo\Api\Routing\Helpers;
-use App\Vehicle;
-use App\Ztl;
+use Urbelog\Vehicle;
+use Urbelog\Ztl;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Input;
-use App\Exceptions\ExceptionHandler;
+use Urbelog\Exceptions\ExceptionHandler;
 use Dingo\Api\Exception\ValidationHttpException;
 use DateTime;
 

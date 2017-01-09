@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Urbelog',
 
     /*
     |--------------------------------------------------------------------------
@@ -174,11 +174,15 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Urbelog\Providers\AppServiceProvider::class,
+        Urbelog\Providers\AuthServiceProvider::class,
+        // Urbelog\Providers\BroadcastServiceProvider::class,
+        Urbelog\Providers\EventServiceProvider::class,
+        Urbelog\Providers\RouteServiceProvider::class,
+
+        /* extras*/
+        Collective\Html\HtmlServiceProvider::class,
+
 
     ],
 
@@ -232,6 +236,10 @@ return [
          * Package Facades...
          */
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+
+        /*extras*/
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

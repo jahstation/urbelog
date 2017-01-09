@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Api\V1\Controllers;
+namespace Urbelog\Api\V1\Controllers;
 
-use App\User;
-use App\Http\Controllers\Controller;
+use Urbelog\User;
+use Urbelog\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Password;
-use App\Api\V1\Requests\ForgotPasswordRequest;
+use Urbelog\Api\V1\Requests\ForgotPasswordRequest;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
